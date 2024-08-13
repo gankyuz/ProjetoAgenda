@@ -1,6 +1,9 @@
 package br.ufpb.dcx.ayla.agenda;
 
-public class Contato {
+import java.io.Serializable;
+import java.util.Objects;
+
+public class Contato implements Serializable {
 
     private String nome;
     private int diaAniversario;
@@ -38,5 +41,32 @@ public class Contato {
 
     public void setMesAniversario(int mesAniversario) {
         this.mesAniversario = mesAniversario;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Contato contato = (Contato) o;
+
+        if (diaAniversario != contato.diaAniversario) return false;
+        if (mesAniversario != contato.mesAniversario) return false;
+        return Objects.equals(nome, contato.nome);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = nome != null ? nome.hashCode() : 0;
+        result = 31 * result + diaAniversario;
+        result = 31 * result + mesAniversario;
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "CONTATO\n" +
+                "Nome:" + nome +
+                "\nData do Aniversário:"+diaAniversario+"/"+mesAniversario;
     }
 }
