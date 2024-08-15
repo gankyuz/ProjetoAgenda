@@ -19,11 +19,5 @@ public class AgendaAylaTest {
         }catch (ContatoInexistenteException e){
             //ok
         }
-        /**a1.salvarDados();
-        try{
-            assertTrue(a1.);
-        }catch (IOException e){
-
-        }**/
     }
 }

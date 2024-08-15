@@ -10,7 +10,7 @@ public class ProgramaAgenda {
             a2.recuperarDados();
             boolean continuar = true;
             while (continuar){
-                String opcao = JOptionPane.showInputDialog("1.Cadastrar\n2.Pesquisar\n3.Sair");
+                String opcao = JOptionPane.showInputDialog("1.Cadastrar\n2.Pesquisar\n3.Remover\n4.Sair");
                 switch (opcao) {
                     case "1":
                         String nome = JOptionPane.showInputDialog("Nome");
@@ -24,6 +24,14 @@ public class ProgramaAgenda {
                         JOptionPane.showMessageDialog(null,a2.pesquisaAniversariantes(dia2,mes2).size());
                         break;
                     case "3":
+                        String nomeRemove = JOptionPane.showInputDialog("Nome");
+                        try{
+                            a2.removeContato(nomeRemove);
+                        }catch (ContatoInexistenteException e){
+                            JOptionPane.showMessageDialog(null, e.getMessage());
+                        }
+                        break;
+                    case "4":
                         continuar = false;
                         break;
                 }
