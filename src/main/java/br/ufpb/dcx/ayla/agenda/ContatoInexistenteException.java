@@ -5,6 +5,6 @@ public class ContatoInexistenteException extends Exception{
         super(msg);
     }
     public ContatoInexistenteException(){
-     super();
+     super("Contato Inexistente");
     }
 }

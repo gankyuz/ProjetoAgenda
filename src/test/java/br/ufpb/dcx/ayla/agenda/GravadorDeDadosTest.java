@@ -15,7 +15,7 @@ public class GravadorDeDadosTest {
         GravadorDeDados gravador = new GravadorDeDados();
         Map<String, Contato> tb = new HashMap<>();
         try {
-            gravador.gravaContatos();
+            gravador.gravaContatos(tb);
         }catch (Exception e){
             //ok
         }

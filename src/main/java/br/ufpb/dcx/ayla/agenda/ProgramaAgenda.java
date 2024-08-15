@@ -39,6 +39,12 @@ public class ProgramaAgenda {
                 case "4":
                     continuar = false;
                     break;
+
+            }
+            try{
+                a2.salvarDados();
+            }catch (IOException e){
+                e.printStackTrace();
             }
         }
     }

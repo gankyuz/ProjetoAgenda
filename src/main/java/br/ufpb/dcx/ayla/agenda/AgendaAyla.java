@@ -12,10 +12,12 @@ public class AgendaAyla implements Agenda{
 
     private Map<String, Contato> contatos;
     private GravadorDeDados gravador;
+    private GravadorDois record;
 
     public AgendaAyla(){
         this.contatos = new HashMap<>();
         this.gravador = new GravadorDeDados();
+        this.record = new GravadorDois();
     }
     public void salvarDados() {
         try{
