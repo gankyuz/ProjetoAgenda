@@ -19,6 +19,22 @@ public class AgendaAyla implements Agenda{
         this.gravador = new GravadorDeDados();
         this.record = new GravadorDois();
     }
+
+    public void salvarDadosDois(){
+        try{
+            record.gravaContatinhos(this.contatos);
+        }catch (IOException e){
+            System.err.println(e.getMessage());
+        }
+    }
+    public void recuperarDadosDois(){
+        try {
+            this.contatos = record.recuperaContatinhos();
+        }catch (IOException e){
+            System.err.println(e.getMessage());
+            this.contatos = new HashMap<>();
+        }
+    }
     public void salvarDados() {
         try{
             gravador.gravaContatos(this.contatos);
