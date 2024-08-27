@@ -1,4 +1,4 @@
-package br.ufpb.dcx.ayla.agenda;
+package br.ufpb.dcx.ayla.agenda.ClassesDeAgenda;
 
 import java.io.Serializable;
 import java.util.Objects;
@@ -66,7 +66,7 @@ public class Contato implements Serializable {
     @Override
     public String toString() {
         return "CONTATO\n" +
-                "Nome:" + nome +
-                "\nData do Aniversário:"+diaAniversario+"/"+mesAniversario;
+                "Nome: " + nome +
+                "\nData do Aniversário: "+diaAniversario+"/"+mesAniversario;
     }
 }

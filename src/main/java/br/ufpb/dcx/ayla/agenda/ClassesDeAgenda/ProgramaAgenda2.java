@@ -1,4 +1,6 @@
-package br.ufpb.dcx.ayla.agenda;
+package br.ufpb.dcx.ayla.agenda.ClassesDeAgenda;
+
+import br.ufpb.dcx.ayla.agenda.GUI.AgendaGUI;
 
 import javax.swing.*;
 import java.awt.event.WindowAdapter;

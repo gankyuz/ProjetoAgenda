@@ -1,4 +1,4 @@
-package br.ufpb.dcx.ayla.agenda;
+package br.ufpb.dcx.ayla.agenda.ClassesDeAgenda;
 
 public class ContatoInexistenteException extends Exception{
     public ContatoInexistenteException(String msg){

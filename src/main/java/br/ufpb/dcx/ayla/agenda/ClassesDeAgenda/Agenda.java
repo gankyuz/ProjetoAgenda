@@ -1,4 +1,4 @@
-package br.ufpb.dcx.ayla.agenda;
+package br.ufpb.dcx.ayla.agenda.ClassesDeAgenda;
 
 import java.io.IOException;
 import java.util.Collection;

@@ -1,8 +1,11 @@
 package br.ufpb.dcx.ayla.agenda;
 
+import br.ufpb.dcx.ayla.agenda.ClassesDeAgenda.Agenda;
+import br.ufpb.dcx.ayla.agenda.ClassesDeAgenda.AgendaAyla;
+import br.ufpb.dcx.ayla.agenda.ClassesDeAgenda.Contato;
+import br.ufpb.dcx.ayla.agenda.ClassesDeAgenda.ContatoInexistenteException;
 import org.junit.jupiter.api.Test;
 
-import java.io.IOException;
 import java.util.Collection;
 
 import static org.junit.jupiter.api.Assertions.*;

@@ -1,10 +1,7 @@
-package br.ufpb.dcx.ayla.agenda;
+package br.ufpb.dcx.ayla.agenda.GUI;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
-import java.awt.event.WindowListener;
 
 public class AgendaGUI extends JFrame {
     JLabel linha1,linha2;

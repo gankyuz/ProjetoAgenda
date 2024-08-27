@@ -1,5 +1,6 @@
 package br.ufpb.dcx.ayla.agenda;
 
+import br.ufpb.dcx.ayla.agenda.ClassesDeAgenda.Contato;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

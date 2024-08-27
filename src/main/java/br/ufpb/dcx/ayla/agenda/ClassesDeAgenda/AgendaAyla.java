@@ -1,14 +1,15 @@
-package br.ufpb.dcx.ayla.agenda;
+package br.ufpb.dcx.ayla.agenda.ClassesDeAgenda;
 
-import javax.swing.*;
+import br.ufpb.dcx.ayla.agenda.Gravador.GravadorDeDados;
+import br.ufpb.dcx.ayla.agenda.Gravador.GravadorDois;
+
 import java.io.IOException;
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
-public class AgendaAyla implements Agenda{
+public class AgendaAyla implements Agenda {
 
     private Map<String, Contato> contatos;
     private GravadorDeDados gravador;
@@ -74,11 +75,10 @@ public class AgendaAyla implements Agenda{
         return listaNova;
     }
 
-    public boolean removeContato(String nome) throws ContatoInexistenteException{
+    public boolean removeContato(String nome) throws ContatoInexistenteException {
         if(this.contatos.containsKey(nome)){
             this.contatos.remove(nome);
             return true;
-
         } else {
             throw new ContatoInexistenteException("O contato não existe com esse nome. ");
         }
